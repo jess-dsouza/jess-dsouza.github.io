@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 12px;
+}
+
+svg {
+	transform-box: fill-box;
+	transform-origin: 50% 50%;
+}
+
+.landing_page {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+#jess_logo {
+	& path:nth-of-type(1) {
+		stroke-dasharray: 289px;
+		stroke-dashoffset: 289px;
+	}
+	& path:nth-of-type(2) {
+		stroke-dasharray: 96px;
+		stroke-dashoffset: 96px;
+	}
+	& path:nth-of-type(3) {
+		stroke-dasharray: 576px;
+		stroke-dashoffset: 576px;
+	}
+	& path:nth-of-type(4) {
+		stroke-dasharray: 110px;
+		stroke-dashoffset: 110px;
+	}
+	& path:nth-of-type(5) {
+		stroke-dasharray: 105px;
+		stroke-dashoffset: 105px;
+	}
+	& path:nth-of-type(6) {
+		stroke-dasharray: 91px;
+		stroke-dashoffset: 91px;
+	}
+	& path {
+		animation: 2s write ease-in normal forwards,
+			1s fill 1.5s ease-in normal forwards;
+	}
+}
+
+@keyframes write {
+	100% {
+		stroke-dashoffset: 0px;
+	}
+}
+
+@keyframes fill {
+	0% {
+		fill: transparent;
+	}
+	100% {
+		fill: $text1_dark;
+	}
+}
