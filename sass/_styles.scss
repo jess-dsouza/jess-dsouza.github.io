@@ -1,6 +1,6 @@
 body[dark] {
-	background: url("../resources/images/bg-image-dark-mobile.jpg") no-repeat 5% /
-		cover;
+	background: url("../resources/pictures/bg-image-dark-mobile.jpg") no-repeat
+		5% / cover;
 	& h1 {
 		color: $text1_dark;
 	}
@@ -25,7 +25,7 @@ body[dark] {
 }
 
 body[light] {
-	background: url("../resources/images/bg-image-light-mobile.jpg") no-repeat
+	background: url("../resources/pictures/bg-image-light-mobile.jpg") no-repeat
 		38% / cover;
 	& h1 {
 		color: $text1_light;
