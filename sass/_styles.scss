@@ -1,3 +1,68 @@
-body {
-	background-color: $bg1_dark;
+body[dark] {
+	background: url("../resources/images/bg-image-dark-mobile.jpg") no-repeat 5% /
+		cover;
+	& h1 {
+		color: $text1_dark;
+	}
+	p {
+		color: $text2_dark;
+	}
+	& .main_page {
+		& header,
+		& footer {
+			background-color: $bg2_dark;
+		}
+		& .hamburger,
+		& .home_page_logo {
+			fill: $text1_dark;
+		}
+		& .switch {
+			& label:after {
+				background: $bg2_dark;
+			}
+		}
+	}
+}
+
+body[light] {
+	background: url("../resources/images/bg-image-light-mobile.jpg") no-repeat
+		38% / cover;
+	& h1 {
+		color: $text1_light;
+	}
+	p {
+		color: $text2_light;
+	}
+	& .main_page {
+		& header,
+		& footer {
+			background-color: $bg2_light;
+		}
+		& .hamburger,
+		& .home_page_logo {
+			fill: $text1_light;
+		}
+		& .switch {
+			& label:after {
+				background: $bg2_light;
+			}
+		}
+	}
+}
+
+html {
+	font-family: "Pacifico", sans-serif;
+}
+
+.hamburger {
+	fill: $text1_dark;
+}
+
+.switch {
+	& label {
+		background: $bg2_dark;
+	}
+	& input:checked + label {
+		background: $button_1;
+	}
 }
